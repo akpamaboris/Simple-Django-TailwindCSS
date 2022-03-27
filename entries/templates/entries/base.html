@@ -1,0 +1,22 @@
+<!-- entries/templates/entries/base.html -->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Diary</title>
+    <link rel="stylesheet" href="{% static 'css/diary.css' %}" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <h1
+      class="font-medium leading-tight text-center text-5xl mt-0 mb-2 text-blue-600"
+    >
+      <a href="/">Dear diary …</a>
+    </h1>
+
+    {% block content %}{% endblock %}
+  </body>
+</html>
